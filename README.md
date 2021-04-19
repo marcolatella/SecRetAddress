@@ -28,7 +28,8 @@ gcc -print-file-name=plugin
 If the command simply prints the word "plugin", that means you have the wrong compiler.
 
 Now install "gcc-plugin-dev" package for other dependencies.
-My GCC version is 9.3.0, so I had to install version 9 of "gcc-plugin-dev"
+My GCC version is 9.3.0, so I had to install version 9 of "gcc-plugin-dev".
+Remember to change the version to that of your compiler.
 
 ```
 sudo apt-get install -y gcc-9-plugin-dev
