@@ -5,7 +5,10 @@ This is a part of the a project done during my studies.
 
 The idea behind the work was the study and analysis of the protection system Stack Canary, in order to determine its robustness and weaknesses in case of Buffer Overflow attacks or combined attacks exploiting multiple vulnerabilities.
 
+## How it works
 
+How said earlier, the purpose of this plugin is protect C programs from Buffer Overflow attacks. In order to do this, the plugin parses, in compilation phase, each function of the source code to find array defined. If an array is found, the function will be instrumented adding some protection code in the ENTRY point and in the EXIT point.
+The protection code injected, allocates, when the function starts, a new memory, in which the return address is copied. When the function ends the Ret Address stored in the stack is compared with the one copied in the memory previously created. if there is a mismatch, the program is terminated.
 
 
 ## Install GCC
