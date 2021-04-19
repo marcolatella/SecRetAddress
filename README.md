@@ -10,7 +10,9 @@ The idea behind the work was the study and analysis of the protection system Sta
 
 ## Install GCC
 
-The plugin was tested on an Ubuntu 20.04 machine
+The plugin was tested on an Ubuntu 20.04 machine.
+
+First of all install GCC compiler:
 
 ``` 
 sudo apt update
