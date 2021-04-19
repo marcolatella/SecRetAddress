@@ -35,3 +35,10 @@ Remember to change the version to that of your compiler.
 sudo apt-get install -y gcc-9-plugin-dev
 ```
 
+To check that the installation was successful you can follow this steps:
+```
+cd check_config
+make
+make check
+```
+
