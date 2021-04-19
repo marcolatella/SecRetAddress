@@ -6,9 +6,11 @@ This is a part of the a project done during my studies.
 The idea behind the work was the study and analysis of the protection system Stack Canary, in order to determine its robustness and weaknesses in case of Buffer Overflow attacks or combined attacks exploiting multiple vulnerabilities.
 
 
-The plugin was tested on an Ubuntu 20.04 machine
+
 
 ## Install GCC
+
+The plugin was tested on an Ubuntu 20.04 machine
 
 ``` 
 sudo apt update
