@@ -41,4 +41,4 @@ cd check_config
 make
 make check
 ```
-
+If the commands print "[+] Plugin Initializated", that means that all went well. 
