@@ -42,3 +42,21 @@ make
 make check
 ```
 If the commands print "[+] Plugin Initializated", that means that all went well. 
+
+## Test Plugin
+
+In test-plugin folder you can find a few file for testing the plugin functionalities. The "vuln.c" file is a very simple vulnerable progam, it is affect by Buffer Overflow and Format String bug vulnerabilities. 
+Running these commands you should get the same output shown in the image below:
+```
+make
+make protect
+```
+<img width="446" alt="Schermata 2021-04-30 alle 12 39 10" src="https://user-images.githubusercontent.com/82458106/116684276-1154ae80-a9b1-11eb-904f-0c70ea9eafb6.png">
+
+Now the executable file is protected and no longer vulnerable!
+
+## Usage
+
+
+
+
