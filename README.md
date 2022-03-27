@@ -55,8 +55,6 @@ make protect
 
 Now the executable file is protected and no longer vulnerable!
 
-## Usage
-
 
 
 
