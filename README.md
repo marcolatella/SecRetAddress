@@ -7,8 +7,8 @@ The idea behind the work was the study and analysis of the protection system Sta
 
 ## How it works
 
-How said earlier, the purpose of this plugin is protect C programs from Buffer Overflow attacks. In order to do this, the plugin parses, in compilation phase, each function of the source code to find array defined. If an array is found, the function will be instrumented adding some protection code in the ENTRY point and in the EXIT point.
-The protection code injected, allocates, when the function starts, a new memory, in which the return address is copied. When the function ends the Ret Address stored in the stack is compared with the one copied in the memory previously created. if there is a mismatch, the program is terminated.
+How said earlier, the purpose of this plugin is to protect C programs from Buffer Overflow attacks. In order to do this, the plugin parses, in compilation phase, each function of the source code to find arrays defined. If an array is found, the function will be instrumented by adding some protection code in the ENTRY point and in the EXIT point.
+The protection code injected, allocates, when the function starts, a new memory, in which the return address is copied. When the function ends, the Ret Address stored in the stack is compared with the one copied in the previously created memory. if there is a mismatch, the program is terminated.
 
 
 ## Install GCC
@@ -21,11 +21,11 @@ First of all install GCC compiler:
 sudo apt update
 sudo apt install build-essential
 ```
-Now check if API header files are installed correctly, running this command:
+Now check if API header files are correctly installed, by running this command:
 ```
 gcc -print-file-name=plugin
 ```
-If the command simply prints the word "plugin", that means you have the wrong compiler.
+If the command simply prints the word "plugin", it means that you have the wrong compiler.
 
 Now install "gcc-plugin-dev" package for other dependencies.
 My GCC version is 9.3.0, so I had to install version 9 of "gcc-plugin-dev".
@@ -41,7 +41,7 @@ cd check_config
 make
 make check
 ```
-If the commands print "[+] Plugin Initializated", that means that all went well. 
+If the commands print "[+] Plugin Initializated", that means that all went good. 
 
 ## Test Plugin
 
